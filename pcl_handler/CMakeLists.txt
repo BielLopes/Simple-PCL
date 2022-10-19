@@ -142,7 +142,7 @@ include_directories(
 ## With catkin_make all packages are built within a single CMake context
 ## The recommended prefix ensures that target names across packages don't collide
 # add_executable(${PROJECT_NAME}_node src/pcl_handler_node.cpp)
-add_executable(example src/test_pcl.cpp)
+add_executable(densify src/densify_cloud.cpp)
 
 ## Rename C++ executable without prefix
 ## The above recommended prefix causes long target names, the following renames the
@@ -162,7 +162,7 @@ add_executable(example src/test_pcl.cpp)
 #   ${roscpp_LIBRARIES}
 #   ${sensor_msgs_LIBRARIES}
 # )
-target_link_libraries(example ${catkin_LIBRARIES} ${PCL_COMMON_LIBRARIES})
+target_link_libraries(densify ${catkin_LIBRARIES} ${PCL_COMMON_LIBRARIES})
 
 #############
 ## Install ##
