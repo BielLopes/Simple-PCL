@@ -83,7 +83,7 @@ cloud_cb (const sensor_msgs::PointCloud2ConstPtr& input)
   // pcl::PointCloud<pcl::PointXYZIRT>* cloud_dense = new pcl::PointCloud<pcl::PointXYZIRT>;
   // pcl::fromPCLPointCloud2(*cloud, *cloud_dense);
 
-  pcl::PointCloud<PointXYZIRT>::Ptr cloud_dense;
+  pcl::PointCloud<PointXYZIRT>* cloud_dense = new pcl::PointCloud<PointXYZIRT>;
   // pcl::PointCloud<pcl::PointXYZIRT>* cloud_dense = new pcl::PointCloud<pcl::PointXYZIRT>;
   pcl::fromROSMsg(*input, *cloud_dense);
 
