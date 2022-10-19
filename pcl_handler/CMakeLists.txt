@@ -17,7 +17,7 @@ find_package(pcl_conversions REQUIRED)
 find_package(pcl_ros REQUIRED)
 find_package(roscpp REQUIRED)
 find_package(sensor_msgs REQUIRED)
-find_package(PCL 1.10 REQUIRED)
+find_package(PCL 1.8 REQUIRED)
 
 
 ## Uncomment this if the package has a setup.py. This macro ensures
